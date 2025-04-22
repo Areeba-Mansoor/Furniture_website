@@ -1,16 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  line-height: 2;
+  font-family: "Roboto", sans-serif;
 }
-
+/* ----header----- */
 header {
   min-height: 20%;
   margin: 0.5rem 0.7rem;
-  background-color: rgb(240, 240, 239);
-  border-radius: 0.2rem;
+  background-color: rgb(220, 220, 219);
+  border-radius: 0.3rem;
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(179, 169, 169, 0.412);
 }
 
@@ -20,7 +20,7 @@ nav {
   align-items: center;
 }
 
-.navigation_links {
+/* .navigation_links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,12 +35,13 @@ nav {
   text-decoration: none;
   font-size: 1rem;
   color: #282828;
-}
+} */
 
 nav h1 {
   font-size: 1.8vw;
   margin-left: 0.5rem;
-  font-family: sans-serif;
+  font-family: Roboto;
+  color: #555;
 }
 
 #menu_bar {
@@ -50,15 +51,15 @@ nav h1 {
 
 .icons {
   display: flex;
-  gap: 1.2rem;
-  font-size: 1.2rem;
+  gap: 1rem;
   margin: 1rem;
 }
 
+/* -------slider------- */
 .slider {
-  width: 98%;
+  width: 95%;
   height: 75vh;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   overflow: hidden;
   position: relative;
   border-radius: 0.5rem;
@@ -78,25 +79,27 @@ nav h1 {
   object-fit: cover;
 }
 
+/* -------slogen text------- */
 .slogen {
   position: absolute;
   top: 40%;
   left: 10%;
   right: 10%;
-  font-family: sans-serif;
+  font-family: Roboto;
 }
 
 .slogen h3 {
-  font-size: 3vw;
+  font-size: 2.8rem;
   text-align: center;
   color: rgb(243, 255, 255);
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .slogen p {
-  font: 1rem sans-serif;
+  font: 1rem Roboto;
   text-align: center;
-  color: rgb(81, 83, 83);
+  color: rgb(62, 62, 62);
+  line-height: 1.2;
 }
 
 .slogen button {
@@ -139,12 +142,13 @@ nav h1 {
   }
 }
 
+/* ------hero section----- */
 .hero_section h3 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Roboto;
   font-size: 2rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .collection_sec {
@@ -157,6 +161,12 @@ nav h1 {
   margin-top: 2.2rem;
 }
 
+.collection_sec .collection img:hover {
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: transform 0.5s ease;
+}
+
 .collection_sec #icons {
   margin-bottom: 2rem;
 }
@@ -167,17 +177,17 @@ nav h1 {
   font-weight: 600;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-  font-family: sans-serif;
+  font-family: Roboto;
 }
 
 /* -----product section---- */
 .product_section h3 {
   text-align: center;
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  font-family: Roboto;
+  font-size: 1.7rem;
   font-weight: 600;
-  margin-top: 2%;
-  margin-bottom: 1rem;
+  margin-top: 3%;
+  margin-bottom: 3rem;
 }
 
 .product_section {
@@ -203,11 +213,23 @@ nav h1 {
   min-width: 250px;
   max-width: 300px;
 }
-
-.card img {
-  width: 100%;
-  height: 30vh;
+.card_img{
+  min-width: 250px;
+  max-width: 300px;
+  overflow: hidden;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card_img img {
+  width: 100%;
+  height: 35vh;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: transform 0.8s ease;
+}
+
+.card_img img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .card h2 {
@@ -237,6 +259,7 @@ nav h1 {
   font-size: 14px;
 }
 
+/* -------banner2------ */
 .banner2 {
   width: 95%;
   height: auto;
@@ -246,15 +269,25 @@ nav h1 {
 
 .banner2 img {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   /* object-fit: cover; */
 }
 
 .furnitures {
   text-align: center;
   font-size: 1.5rem;
-  font-family: sans-serif;
+  font-family: Roboto;
 }
+
+.Premimum {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 4%;
+  margin-bottom: 3rem;
+}
+/* ------footer------ */
 footer {
   width: 100%;
   height: auto;
@@ -270,14 +303,17 @@ footer > div {
   max-width: 320px;
   margin: 01rem auto;
 }
+
 .social_links h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #a5a5a5;
+  margin-bottom: 1rem;
 }
 
 .social_links p {
   font-size: 0.9rem;
   color: #fff;
+  text-transform: lowercase;
 }
 
 .social_links img {
@@ -287,6 +323,7 @@ footer > div {
 .navigation p {
   color: #ffffff;
   font-size: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .navigation li {
@@ -298,42 +335,52 @@ footer > div {
 .navigation li img {
   width: 1vw;
 }
-
-.navigation_address p,
-span {
+.navigation_address p{
+  margin-bottom: 1.2rem;
   color: #fff;
-  font-size:0.8rem;
+  font-size: 1rem;
 }
+
+.navigation_address,
+span {
+  margin-bottom: 1.2rem;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
 .navigation_address img {
   width: 10%;
 }
+
 .projects p {
   font-size: 1rem;
   color: #ffffff;
 }
+
 .projects img {
   width: 70%;
   margin-top: 1rem;
 }
-
+/* ------media query----- */
 @media (max-width: 786px) {
-  nav h1 {
+  /* nav h1 {
     font-size: 1rem;
   }
   .navigation_links a {
     font-size: 12px;
+  } */
+  .slogen h3{
+    font-size: 1.5rem;
   }
-  .slogen button{
+  .slogen button {
     padding: 8px 14px;
-    font-size: .8rem;
-
+    font-size: 0.8rem;
   }
   .collection_sec > div {
     width: 60%;
     text-align: center;
   }
-  .card{
+  .card {
     width: 100%;
- 
   }
 }

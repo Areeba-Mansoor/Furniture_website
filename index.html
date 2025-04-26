@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Decor</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./home-design-inspiration-logo-sofa-260nw-2178957405.webp" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+
 </head>
 
 <body>
     <!-- -----header----- -->
     <header>
-        <nav>
-            <img src="./icons8-menu-24.png" alt="" id="menu_bar">
-            <h1>Furniture Decor</h1>
-            <!-- <div class="navigation_links">
+        <nav class="nav-bar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <div>
+                <h1>Furniture Decor</h1>
+            </div>
+           
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
+                <li><a href="#product">Product</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </div> -->
+                <li><a href="#footer">Contact</a></li>
+            </ul>
             <div class="icons">
                 <img src="./icons8-search-30.png" alt="">
                 <img src="./icons8-heart-30.png" alt="">
@@ -53,7 +52,7 @@
     </div>
 
     <!-- ------Collection section------- -->
-    <section class="hero_section">
+    <section class="hero_section" id="product">
         <h3>Collection</h3>
 
         <div class="collection_sec">
@@ -95,7 +94,6 @@
         <h3>Best Selling Item</h3>
 
         <div class="container">
-
             <div class="card">
                 <div class="card_img">
                     <img src="./chair8 (1).png" alt="Card Image">
@@ -154,20 +152,6 @@
 
             <div class="card">
                 <div class="card_img">
-                    <img src="./chair8 (5).png" alt="Card Image">
-                </div>
-                <h2>Chair</h2>
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <p>$12,900</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
                     <img src="./chair8 (6).png" alt="Card Image">
                 </div>
                 <h2>Chair</h2>
@@ -194,20 +178,7 @@
                 <button>Add to Cart</button>
             </div>
 
-            <div class="card">
-                <div class="card_img">
-                    <img src="./chair4.png" alt="Card Image">
-                </div>
-                <h2>Chair</h2>
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <p>$12,500</p>
-                <button>Add to Cart</button>
-            </div>
-
+    
             <div class="card">
                 <div class="card_img">
                     <img src="./table-2587598_1280.jpg" alt="Card Image">
@@ -240,12 +211,17 @@
 
     <!-- -------banner2------ -->
     <div class="banner2">
-        <img src="./Frame 19.png" alt="">
+      <img src="./banner2.png" alt="">
+      <div class="banner2-text">
+        <h1>Transform Your Home </h1>
+          <h1> with Furniture</h1> 
+            <button>Contact Us</button>
+      </div>
     </div>
 
     <!-- -----Produts----- -->
-    <section>
-        <h2 class="furnitures">Our Products</h2>
+    <section class="product_section">
+        <h3>Our Products</h3>
         <div class="container">
             <div class="card">
                 <div class="card_img">
@@ -583,26 +559,14 @@
                 <button>Add to Cart</button>
             </div>
 
-            <div class="card">
-                <div class="card_img">
-                    <img src="./lamp1.png" alt="Card Image">
-                </div>
-                <h2>Lamp</h2>
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <p>$7000</p>
-                <button>Add to Cart</button>
-            </div>
-        </div>
+
     </section>
 
     <!-- ------Premium Collection------ -->
-    <section>
-        <h2 class="Premimum">Luxury Collection</h2>
+    <section class="product_section">
+        <h3>Luxury Collection</h3>
         <div class="container">
+            
             <div class="card">
                 <div class="card_img">
                     <img src="./bed-8591970_1280.jpg" alt="Card Image">
@@ -613,13 +577,12 @@
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <p>$85,500</p>
+                <p>$112,700</p>
                 <button>Add to Cart</button>
             </div>
-
             <div class="card">
                 <div class="card_img">
-                    <img src="./bedroom-389254_640.jpg" alt="Card Image">
+                    <img src="./bedroom-389254_640.jpg" alt="Card Image" >
                 </div>
                 <h2>Bedroom</h2>
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
@@ -627,10 +590,10 @@
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <p>$101,990</p>
+                <p>$121,00</p>
                 <button>Add to Cart</button>
             </div>
-
+            
             <div class="card">
                 <div class="card_img">
                     <img src="./bedroom-4696556_1280.jpg" alt="Card Image">
@@ -659,9 +622,10 @@
                 <button>Add to Cart</button>
             </div>
 
+
             <div class="card">
                 <div class="card_img">
-                    <img src="./ai-generated-8497790_1280.jpg" alt="Card Image">
+                    <img src="./home-decor-449008_1920.jpg" alt="Card Image">
                 </div>
                 <h2>Bedroom</h2>
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
@@ -669,10 +633,9 @@
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <p>$110,900</p>
+                <p>$110,990</p>
                 <button>Add to Cart</button>
             </div>
-
             <div class="card">
                 <div class="card_img">
                     <img src="./ai-generated-8927809_1280.jpg" alt="Card Image">
@@ -683,42 +646,43 @@
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <p>$125,990</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="card">
-                <div class="card_img">
-                    <img src="./bedroom-2288559_1280.jpg" alt="Card Image">
-                </div>
-                <h2>Bedroom</h2>
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <p>$70,500</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img src="./bed-644728_1280.jpg" alt="Card Image">
-                </div>
-                <h2>Bedroom</h2>
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
-                <img src="./icons8-star-48 (1).png" alt="" id="icon">
                 <p>$99,990</p>
                 <button>Add to Cart</button>
             </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="./brick-wall-1850095_1920.jpg" alt="Card Image">
+                </div>
+                <h2>Bedroom</h2>
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <p>$140,500</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="./bed-6830011_1920.jpg" alt="Card Image">
+                </div>
+                <h2>Chair</h2>
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <img src="./icons8-star-48 (1).png" alt="" id="icon">
+                <p>$125,200</p>
+                <button>Add to Cart</button>
+            </div>
+
+            
 
         </div>
     </section>
 
     <!-- ------footer------- -->
-    <footer>
+    <footer id="footer">
         <div class="social_links">
             <h3>Furniture Decor</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam?</p>
@@ -752,19 +716,19 @@
         </div>
         <div class="navigation_address">
             <p>Navigation</p>
-            <span>
-                <img src="./icons8-address-24.png" alt="">
+            <div>
+                <img src="./icons8-address-24.png" alt="" >
                 Address 123456789
                 456123789
-            </span> <br>
-            <span>
+            </div>
+            <div>
                 <img src="./icons8-clock-32.png" alt="">
                 10:30 AM to 07:30 PM
-            </span> <br>
-            <span>
+            </div>
+            <div>
                 <img src="./icons8-appointment-64.png" alt="">
                 Monday to Friday
-            </span>
+            </div>
         </div>
         <div class="projects">
             <p>Our Projects</p>
